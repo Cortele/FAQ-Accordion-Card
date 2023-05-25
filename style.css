@@ -1,0 +1,122 @@
+:root {
+    /* Text Colors */
+    --clr-very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --clr-very-dark-greyish-blue: hsl(237, 12%, 33%);
+    --clr-dark-greyish-blue: hsl(240, 6%, 50%);
+    --clr-soft-red: hsl(14, 88%, 65%);
+
+    /* Background Gradient */
+    --clr-soft-violet: hsl(273, 75%, 66%);
+    --clr-soft-blue: hsl(240, 73%, 65%);
+    --clr-white: #fff;
+
+    /* Dividers */
+    --clr-light-greyish-blue: hsl(240, 5%, 91%);
+
+    /* Font Weights */
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-image: linear-gradient(var(--clr-soft-violet), var(--clr-soft-blue));
+    display: grid;
+    font-family: 'Kumbh Sans', sans-serif;
+    min-height: 100vh;
+}
+
+main {
+    padding: 2em;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: var(--fw-bold);
+    text-align: center;
+}
+
+h2 {
+    font-size: 0.75rem;
+    font-weight: var(--fw-regular);
+}
+
+h2:hover {
+    cursor: pointer;
+    font-weight: var(--fw-bold);
+}
+
+hr {
+    color: var(--clr-light-greyish-blue);
+    width: 100%;
+}
+
+p {
+    font-size: 0.75em;
+    font-weight: var(--fw-regular);
+}
+
+.visible {
+    display: none;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.bold {
+    font-weight: var(--fw-bold);
+}
+
+.hero__container {
+    background-color: var(--clr-white);
+    border-radius: 1.5625em;
+    padding: 2em;
+}
+
+.accordion {
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion-img:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
+img[src="icon-arrow-down.svg"] {
+    height: 5%;
+    width: 5%;
+}
+
+.accordion__container {
+    width: 100%;
+}
+
+@media(min-width: 700px) {
+    .hero__container {
+        display: flex;
+        margin-top: 25%;
+    }
+
+    .mobile-hero-img {
+        display: none;
+    }
+
+    .desktop-hero-img {
+        display: block;
+    }
+
+    .desktop-box-img {
+        display: block;
+        height: 30%;
+        position: relative;
+            right: 43%;
+            top: 180px;
+        width: 30%;
+    }
+}
