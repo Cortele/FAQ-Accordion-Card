@@ -99,8 +99,8 @@ img[src="icon-arrow-down.svg"] {
 
 @media(min-width: 700px) {
     .hero__container {
+        background-image: url(bg-pattern-desktop.svg);
         display: flex;
-        margin-top: 25%;
     }
 
     .mobile-hero-img {
